@@ -2,7 +2,7 @@ pull_request_rules:
   - name: Automatic merge on if only data.json is changed
     conditions:
       - "#approved-reviews-by>=1"
-      - files=docs/data.json
+      - files=docs/data.js
       - "#files=1"
     actions:
       merge:
