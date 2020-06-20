@@ -1,16 +1,16 @@
 pull_request_rules:
   - name: Automatic merge on if only data.json is changed
     conditions:
-      - "#approved-reviews-by>=1"
+      # - "#approved-reviews-by>=1"
       - files=docs/data.js
       - "#files=1"
     actions:
       merge:
         method: merge
 
-pull_request_rules:
-  - name: delete head branch after merge
-    conditions:
-      - merged
-    actions:
-      delete_head_branch: {}
+# pull_request_rules:
+#   - name: delete head branch after merge
+#     conditions:
+#       - merged
+#     actions:
+#       delete_head_branch: {}
